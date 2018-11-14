@@ -141,9 +141,11 @@
            %>
            <div style = "margin: 50px 100px 100px 100px;">
 		
+		
 		<a href = "logout.jsp" target = "_top"><button type="button"> Logout </button></a>
 		<br><br>
 		<h2> Welcome <%=uname%>! [admin]</h2>
-          	<iframe src = "dashboard.html" name = "output" width = "100%" height = "600px"> iframe1 </iframe>
+                <iframe src = "buttons_admin.html" name = "tabs" width = "100%" height = "44px"> iframe1 </iframe><br><br>
+          	<iframe src = "dashboard.html" name = "output" width = "100%" height = "600px"> iframe2 </iframe>
     </body>
 </html>
