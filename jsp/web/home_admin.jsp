@@ -121,7 +121,7 @@ and open the template in the editor.
 			}
 		</script>
     </head>
-    <body background = "sources\grey-chevron-stripes-1920.png" style = "background-attachment: fixed;">
+    <body background = "sources\img3.jpg" style = "background-attachment: fixed;">
 		<%
 			String uname = (String)session.getAttribute("uname");
 		%>

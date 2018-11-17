@@ -1,155 +1,117 @@
-<!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
 -->
+<!DOCTYPE html>
 <html>
-    <head> 
-        <title>LOGIN</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <style>
-body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
-
-input[type=text], input[type=password] {
-    width: 100%;
-    text-align: center;
-     
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
-
-button:hover {
-    opacity: 0.8;
-}
-
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
-
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-}
-
-img.avatar {
-    width: 10%;
-    border-radius: 20%;
-}
-
-.container {
-    padding: 16px;
-}
-
-span.psw {
-    float: right;
-    padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 50%;
-    }
-}
-</style>
-    </head>
-     <body background = "sources\img2.jpg" style = "background-attachment: fixed;">
-    <script type = "text/javascript">
-			function updateTime()
-			{
-				var d = new Date();
-				var tt = "AM"
-				var hh = d.getHours();
-				var mm = d.getMinutes();
-				var ss = d.getSeconds();
-
-				if(parseInt(hh/10) == 0)
-					hh = "0"+hh;
-
-				if(hh > 12)
-				{
-					hh = hh - 12;
-					tt = "PM";
-				}
-
-				if(parseInt(mm/10) == 0)
-					mm = "0"+mm;
-
-				if(parseInt(ss/10) == 0)
-					ss = "0"+ss;
-
-				document.getElementById("timebox").innerHTML = "#Time: " + hh+":"+mm+":"+ss+" "+tt+" #Date: "+d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear();
-			}
-		</script>
-                <script>
-		setInterval(updateTime, 1000);
-		</script>
-		
-		<div id = "timebox"> Time will load up here shortly... </div>
-        <div style = "border: 10px solid grey;border-radius: 10px;background-color:white;margin: 200px 200px 200px 200px;padding: 0px 20px 20px 20px;">
+<head>
+<title>Login and Signup Form Flat Responsive Widget Template :: w3layouts</title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Simple Login and Signup Form web template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<link href="css/style1.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<!--// js -->
+<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+ <link href="//fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+</head>
+<body class="bg agileinfo">
+   <h1 class="agile_head text-center"> Event Management System</h1>
+   <div class="w3layouts_main wrap">
+       
+    <!--Horizontal Tab-->
+        <div id="parentHorizontalTab_agile">
+            <ul class="resp-tabs-list hor_1">
+                <li>login</li>
+                <li>signup</li>
+            </ul>
+            <div class="resp-tabs-container hor_1">
+               <div class="w3_agile_login">
+                    <form action="LoginServlet" method="get" class="agile_form">
+					  <p>Email</p>
+					  <input type="email" name="email" required="required" />
+					  <p>Password</p>
+					  <input type="password" name="password" required="required" class="password" /> 
+					  <div class="check">
+							<label class="checkbox w3l"><input type="checkbox" name="checkbox" required="required"><i> </i>I accept the terms and conditions</label>
+					 </div>
+					  <input type="submit" value="login" class="agileinfo" />
+					</form>
+					 <div class="login_w3ls">
+				        <a href="#">Forgot Password</a>
+					 </div>
+                    
+                </div>
+                <div class="agile_its_registration">
+                    <form action="SignupServlet" method="post" class="agile_form">
+					  <p>First Name</p>
+					  <input type="text" name="fname" required="required" />
+					  <p>Last Name</p>
+					  <input type="text" name="lname" required="required" />
+                                          <p>Email</p>
+					  <input type="email" name="email" required="required" />
+                                           <p>Username</p>
+					  <input type="text" name="uname" required="required" />
+					    <p>Password</p>
+					  <input type="password" name="password" id="password1"  required="required">
+					 <p>Confirm Password</p>
+					  <input type="password" name="confirm_password" id="password2"  required="required">
+         	  			<div class="check w3_agileits">
+							<label class="checkbox w3"><input type="checkbox" name="checkbox" required="required" ><i> </i>I accept the terms and conditions</label>
+						</div>
+					   <input type="submit" value="signup"/>
+					   <input type="reset" value="Reset" />
+					</form> 
+				</div>
+            </div>
+        </div>
+		 <!-- //Horizontal Tab -->
+    </div>
 	
-    <body>
-        
-        <style>
+<!--tabs-->
+<script src="js/easyResponsiveTabs.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	//Horizontal Tab
+	$('#parentHorizontalTab_agile').easyResponsiveTabs({
+		type: 'default', //Types: default, vertical, accordion
+		width: 'auto', //auto or any width like 600px
+		fit: true, // 100% fit in a container
+		tabidentify: 'hor_1', // The tab groups identifier
+		activate: function(event) { // Callback function if tab is switched
+			var $tab = $(this);
+			var $info = $('#nested-tabInfo');
+			var $name = $('span', $info);
+			$name.text($tab.text());
+			$info.show();
+		}
+	});
+});
+</script>
+<script type="text/javascript">
+		window.onload = function () {
+			document.getElementById("password1").onchange = validatePassword;
+			document.getElementById("password2").onchange = validatePassword;
+		};
+		function validatePassword(){
+			var pass2=document.getElementById("password2").value;
+			var pass1=document.getElementById("password1").value;
+			if(pass1!==pass2)
+				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+			else
+				document.getElementById("password2").setCustomValidity('');	 
+				//empty string means no validation error
+		}
 
-h1   {color:  #E94B3C;}
-p    {color: red;}
-</style>
-<h1 style="text-align:center;">Event Management System</h1>
-         <form method="post" action="Welcome.jsp">
-             
-					<legend align="center">
-						<h1>LOGIN</h1>
-					</legend>
-                 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label for="pass"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="pass" required>
-    
-    <p>New user- <a href="register.html">SIGN UP HERE</a>
-        
-    
-    
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">Forgot password?</a></span>
-  </div>
-            
-
-    </form>
-        
-        
-    </body>
+</script>
+<!--//tabs-->
+</body>
 </html>
+

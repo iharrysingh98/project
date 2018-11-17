@@ -15,7 +15,7 @@ Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/acadview","root",""); 
 Statement st=con.createStatement();
 String email=request.getParameter("email");
-String strQuery = "SELECT password FROM user where email='"+email+"'";
+String strQuery = "SELECT password FROM user1 where email='"+email+"'";
 ResultSet rs = st.executeQuery(strQuery);
 rs.next();
 String Countrow = rs.getString(1);

@@ -75,58 +75,35 @@
 			cursor: default;
 		}
 		</style>
-		<script type = "text/javascript">
-			function updateTime()
-			{
-				var d = new Date();
-				var tt = "AM"
-				var hh = d.getHours();
-				var mm = d.getMinutes();
-				var ss = d.getSeconds();
-
-				if(parseInt(hh/10) == 0)
-					hh = "0"+hh;
-
-				if(hh > 12)
-				{
-					hh = hh - 12;
-					tt = "PM";
-				}
-
-				if(parseInt(mm/10) == 0)
-					mm = "0"+mm;
-
-				if(parseInt(ss/10) == 0)
-					ss = "0"+ss;
-
-				document.getElementById("timebox").innerHTML = "#Time: " + hh+":"+mm+":"+ss+" "+tt+" #Date: "+d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear();
-			}
-		</script>
+		
     </head>
-    <body>
-          <body background = "sources\img2.jpg" style = "background-attachment: fixed;">
-        <%
-     String uname = request.getParameter("uname");
+    
+          <body background = "images\main7.jpg" style = "background-attachment: fixed;">
+    
+           <div style = "margin: 50px 100px 100px 100px;">
+		    <%
+     String email = request.getParameter("email");
             String pass = request.getParameter("pass");
             
             
             try
             {
-                String myUrl = "jdbc:mysql://localhost:3306/acadview";
-                Class.forName("com.mysql.cj.jdbc.Driver");
+                String myUrl = "jdbc:mysql://localhost:3306/mydb";
+                Class.forName("com.mysql.jdbc.Driver");
                 Connection conn = DriverManager.getConnection(myUrl,"root","");
             //out.println("Hello 1");
 
-                String query = "Select userid,password from user where userid='"+uname+"' and password ='"+pass+"'";
+                String query = "Select email,password from user where email='"+email+"' and password ='"+pass+"'";
                 Statement st = conn.createStatement();
                 ResultSet rs = st.executeQuery(query);
                 
                if(rs.next())
                 {
                     out.println("Logged in successfully");
-                   out.print("Hello "+uname);}
+                   out.print("Hello "+email);}
                else
                    out.println("Username or Password does not exists");
+        
                 st.close();
             }
             catch(ClassNotFoundException e)
@@ -139,12 +116,10 @@
             }
             
            %>
-           <div style = "margin: 50px 100px 100px 100px;">
-		
 		
 		<a href = "logout.jsp" target = "_top"><button type="button"> Logout </button></a>
 		<br><br>
-		<h2> Welcome <%=uname%>! [admin]</h2>
+		<h2> Welcome <%=email%>! [admin]</h2>
                 <iframe src = "buttons_admin.html" name = "tabs" width = "100%" height = "44px"> iframe1 </iframe><br><br>
           	<iframe src = "dashboard.html" name = "output" width = "100%" height = "600px"> iframe2 </iframe>
     </body>
