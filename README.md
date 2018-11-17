@@ -1,0 +1,7 @@
+# Project name-Event management System 
+Name -Hardeep Singh
+Id-1611981155
+Section-2L
+
+
+PLEASE REFER TO THE SECOND FOLDER OF JSP TO SEE THE UPDATED PROGRESS OF THE PROJECT...
