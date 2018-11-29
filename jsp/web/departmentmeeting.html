@@ -1,0 +1,133 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Department's Meeting</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+<!--
+.style1 {
+	font-family: "Segoe UI", Times, serif;
+	color: #FFFF99;
+}
+.style11 {
+	font-size: 24px;
+	color: #663333;
+}
+.style12 {
+	color: #FF00FF;
+	font-size: 18px;
+}
+.style14 {
+	color: #663333;
+	font-size: 14px;
+}
+body {
+	margin-left: 1cm;
+	margin-top: 0.5cm;
+}
+button
+		{
+			border-radius: 2px;
+			background-color: crimson;
+			color: white;
+			font-size: 20px;
+			padding: 3px 3px 3px 3px;
+			margin: 0px 5px 5px 0px;
+		}
+.style16 {font-size: 20px; color: #660033;}
+-->
+    </style>
+</head>
+
+ <body background = "images\blur.jpg">
+     
+<form action="departmentmeeting.jsp" method="get">
+  <div id="wrapper">
+    <div id="wrapperi">
+      <div id="wrapperj">
+        <h1 align="center" class="style1" id="header"> SCHEDULE Meeting </h1>
+        <div id="footer">
+          <div id="footeri">
+            <div align="center" class="style11"></div>
+            <div align="left" class="style12">
+              <p align="center" class="style11">Department Meeting </p>
+              <p align="left" class="style16"> Event name &nbsp;<span class="style14">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="a" />
+              </span></p>
+              <p align="left" class="style16">Event description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <textarea name="b"></textarea>
+              </p>
+              <p align="left" class="style16">Event type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style14">
+                <input type="text" name="c" />
+              </span></p>
+              <p align="left" class="style16">Start time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style14">
+                <input type="text" name="d" />
+              </span></p>
+              <p align="left" class="style16">Duration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style14">
+                <input name="e" type="text"  />
+              </span></p>
+              <p align="left" class="style16">Start date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style14">
+                <input name="f" type="text"  />
+              </span></p>
+              <p align="left" class="style16">Event options&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <input name="g" type="radio" value="radiobutton" />
+                single
+                <input name="g" type="radio" value="radiobutton" />
+                weekly
+                <input name="g" type="radio" value="radiobutton" />
+                monthly              </p>
+              <p align="left" class="style16">Number of participants&nbsp;&nbsp;&nbsp; <span class="style14">
+                <input name="h" type="text"  />
+              </span></p>
+              <p align="left" class="style16">Schedule Event with id <span class="style14">
+                <input name="i" type="text"  />
+              </span></p>
+              <p align="left" class="style16">College ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input name="j" type="text"  />
+              </p>
+              <p align="left" class="style16">E-mail ID&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="k" />
+              </p>
+                <p align="left" class="style16">Deparment&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="select3">
+                  <option>IT</option>
+                  <option>CSC</option>
+                  <option>ECE</option>
+                  <option>EEE</option>
+                  <option>MECh</option>
+                  <option>CIVIL</option>
+                  <option>BIO TECH</option>
+                </select>
+              </p>
+              <p align="left" class="style14">Education&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="select6">
+                  <option>Bachelor degree</option>
+                  <option>Masters degree</option>
+                  <option>Phd</option>
+                  <option>Doctrate holder</option>
+                </select>
+              </p>
+
+              <p align="left" class="style14">&nbsp;</p>
+              <p align="center" class="style14">
+                <input type="submit" name="Submit2" value="Schedule Event" />
+              </p>
+              <p align="left" class="style14">&nbsp;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+                              <script>
+function goBack()
+{
+  window.history.back();
+}
+</script>
+  </form>
+</body>
+</html>

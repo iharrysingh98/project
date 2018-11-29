@@ -1,14 +1,142 @@
+
+
 <!DOCTYPE html>
+
+
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Forgot Password JSP</title>
-</head>
-<body>
-<h1>Forgot Password</h1>
-<form action="forgot-process.jsp" method="post"><br><br>
-Enter Email ID:<input type="text" name="email" /><br><br>
-<input type="submit" />
-</form>
-</body>
-</html>
+    <head>
+        <title>ERP - Beta Version | Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<style>
+     <style>
+		@font-face
+		{
+			font-family: DS Digi;
+			src: url('sources/DS-DIGI.TTF')
+		}
+		@font-face
+		{
+			font-family: Orange Juice;
+			src: url('sources/orange juice 2.0.ttf');
+		}
+		*
+		{
+			font-family: Segoe UI;
+		}
+		legend
+		{
+			color: crimson;
+		}
+		iframe
+		{
+			border: 10px solid grey;
+			border-radius: 10px;
+		}
+		button
+		{
+			padding: 10px 10px 10px 10px;
+			border-radius: 5px;
+			background-color: crimson;
+			color: white;
+			font-size: 20px;
+			font-family: Impact;
+			margin: 0px 5px 5px 0px;
+		}
+		button:hover
+		{
+			background-color: black;
+		}
+		
+		h2
+		{
+			
+			color: crimson;
+			font-family: Segoe Print;
+			background-color: white;
+			border-radius: 10px;
+			padding: 10px;
+		}
+		h2:hover
+		{
+			color: black;
+			cursor: default;
+		}
+		
+		
+	
+		#timebox
+		{
+			background-color: crimson;
+			color: white;
+			font-family: DS Digi;
+			font-size: 20px;
+			text-align: right;
+			padding: 5px;
+			border-radius: 7px;
+		}
+		</style>
+		<script type = "text/javascript">
+			function updateTime()
+			{
+				var d = new Date();
+				var tt = "AM"
+				var hh = d.getHours();
+				var mm = d.getMinutes();
+				var ss = d.getSeconds();
+				if(parseInt(hh/10) == 0)
+					hh = "0"+hh;
+				if(hh > 12)
+				{
+					hh = hh - 12;
+					tt = "PM";
+				}
+				if(parseInt(mm/10) == 0)
+					mm = "0"+mm;
+				if(parseInt(ss/10) == 0)
+					ss = "0"+ss;
+				document.getElementById("timebox").innerHTML = "#Time: " + hh+":"+mm+":"+ss+" "+tt+"    #Date: "+d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear();
+			}
+		</script>
+    </head>
+    
+      <button type="button" onclick="goBack()" class="button">Back</button>
+    <body background = "images\main2.jpg" style = "background-attachment: fixed;">
+		<script>
+		setInterval(updateTime, 1000);
+		</script>
+		
+		<div id = "timebox"> Time will load up here shortly... </div>
+        <div style = "border: 10px solid grey;border-radius: 10px;background-color:white;margin: 200px 200px 200px 200px;padding: 0px 20px 20px 20px;">
+			<form id = "login-form" action = "Forgotpassword" method="post">
+				<fieldset>
+					<legend align="center">
+						<h1>Forgot Password</h1>
+					</legend>
+					<table>
+                                            
+						<tr>
+						<td width="60%" style="padding: 0px 0px 0px 40px"><img src="images/fp.jpg" style = "height: 300px;width: 300px;"></td>
+						<td style="text-align: center;">
+                                                    <h2><br>
+                                        Email :  <input type="text" placeholder="Enter your email" name = "email" autofocus required><br><br>
+                                        NewPassword :<input type="password" placeholder="your new password" name = "password" required><br><br>
+						<input type="submit" value="Change Password" style="background-color: crimson; button-align:center;color: white;border: 2px dotted grey; height: 40px; width: 150px;">
+						</h2>
+						</td>
+						</tr>
+                                            
+					</table>
+				</fieldset>
+			</form>
+		</div>
+                <script>
+function goBack()
+{
+  window.history.back();
+}
+</script>
+    </body>

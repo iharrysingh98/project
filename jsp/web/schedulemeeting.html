@@ -1,69 +1,85 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<title>Schedule a meeting </title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link href="style.css" rel="stylesheet" type="text/css" />
-    <style type="text/css">
+<!DOCTYPE html>
 <!--
-.style1 {
-	font-family: "Times New Roman", Times, serif;
-	color: #FFFF99;
-}
-.style12 {
-	color: #FF00FF;
-	font-size: 18px;
-}
-.style14 {
-	color: #663333;
-	font-size: 14px;
-}
-.style15 {
-	color: #660033;
-	font-size: 14px;
-	font-weight: bold;
-}
-body {
-	margin-left: 1cm;
-	margin-top: 0.5cm;
-}
-.style9 {font-size: 14px}
-.style22 {font-size: 16px}
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
 -->
-    </style>
-</head>
-
-<body>
-  <div id="wrapper">
-    <div id="wrapperi">
-      <div id="wrapperj">
-        <h1 align="center" class="style1" id="header"> VIEW SCHEDULED CONFERENCES </h1>
-        <div id="footer">
-          <div id="footeri">
-            <div align="left" class="style12">
-              <p align="left" class="style15 style22">Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Meeting type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Start time &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Duration &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scheduler ID</p>
-              <p align="left" class="style15 style22">&nbsp;</p>
-              <p align="left" class="style15 style22">&nbsp;</p>
-              <p align="left" class="style15 style22">&nbsp;</p>
-              <p align="left" class="style15 style22">&nbsp;</p>
-              <p align="left" class="style15 style22">&nbsp;</p>
-              <p align="left" class="style15 style22">&nbsp;</p>
-              <p align="left" class="style15 style22">&nbsp;</p>
-              <p align="left" class="style15 style22">&nbsp;</p>
-              <p align="left" class="style15 style22">&nbsp;</p>
-              <p align="left" class="style15 style22">&nbsp; </p>
-              <p class="learnmore">&nbsp; </p>
-              <p class="learnmore">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style9">&nbsp;&nbsp;</span></p>
-              <p class="learnmore">&nbsp;</p>
-              <p class="learnmore">&nbsp;</p>
-              <p align="left" class="style14">&nbsp;</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
+<html>
+    <head>
+        <title>| Create an Event</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+		*
+		{
+			font-family: Segoe UI;
+		}
+		legend
+		{
+			color: crimson;
+		}
+		td
+		{	
+			padding: 0px 10px 0px 10px;
+			width: 300px;
+		}
+		h2
+		{
+			color:crimson;
+		}
+		input
+		{
+			width: 250px;
+		}
+		button
+		{
+			border-radius: 2px;
+			background-color: crimson;
+			color: white;
+			font-size: 20px;
+			padding: 3px 3px 3px 3px;
+			margin: 0px 5px 5px 0px;
+		}
+		button:hover
+		{
+			background-color: green;
+		}
+		</style>
+		
+    </head>
+    <body bgcolor = "white">
+        <div style = "background-color:white;padding: 0px 20px 20px 20px;">
+			<form action = "createaevent.html" >
+				<fieldset>   
+					<legend align="center">
+						<h1> Schedule a Meeting </h1>
+					</legend>
+                                    <center><h2>
+                                            For Department Meeting: <a href="departmentmeeting.html">Department meeting</a><br><br>
+                                            For Hod's meeeting: <a href="hodmeeting.html">HOd's meeting </a><br><br>
+                                            For College Meeting: <a href="collegemeeting.html">College meeting </a><br>
+                                            </h2>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        <br><br><br><br>
+                                            <input type="submit" value="Go Back" style="background-color: crimson; button-align:center;color: white;border: 2px dotted grey; height: 40px; width: 150px;">
+                             
+					<span id = "output" style = "visibility: hidden;color: red;">Hello</span>
+					</center>
+                                              <script>
+function goBack()
+{
+  window.history.back();
+}
+</script>
+				</fieldset>
+			</form>
+		</div>
+    </body>
 </html>

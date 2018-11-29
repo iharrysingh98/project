@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Cancel Events</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+<!--
+.style1 {
+	font-family: "Segoe UI", Times, serif;
+	color: #FFFF99;
+}
+.style12 {
+	color: #FF00FF;
+	font-size: 18px;
+}
+.style14 {
+	color: #663333;
+	font-size: 14px;
+}
+body {
+	margin-left: 1cm;
+	margin-top: 0.5cm;
+}
+p {
+    text-indent: 50px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+button
+		{
+			border-radius: 2px;
+			background-color: crimson;
+			color: white;
+			font-size: 20px;
+			padding: 3px 3px 3px 3px;
+			margin: 0px 5px 5px 0px;
+		}
+
+.style21 {color: #B7B7B8}
+.style23 {color: #663333; font-size: 16px; font-weight: bold; }
+-->
+    </style>
+</head>
+
+ <body background = "images\blur.jpg">
+     
+       <button type="button" onclick="goBack()" class="button">Back</button>
+<form action="cancel.jsp" method="get">
+  <div id="wrapper">
+    <div id="wrapperi">
+      <div id="wrapperj">
+        <h1 align="center" class="style1" id="header">Cancel the Event Meeting </h1>
+        <div id="footer">
+        <div id="footeri">
+         
+            <p align="left" class="style23"> Enter Event or meeting name to be cancelled </p>
+              <p align="center" class="style14">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+              <p align="center" class="style14">&nbsp;</p>
+              <p align="left" class="style14">Event or Meeting Name
+                <input type="text" name="cancel" />
+                </p>
+              <p align="left" class="style14">&nbsp;</p>
+              <p align="center" class="style14">
+             <button type = "submit" id = "submit"> Cancel Event/Meeting </button><br>
+              </p>
+              <p align="left" class="style14">&nbsp; </p>
+              <p align="center" class="style14">&nbsp;</p>
+              <p align="center" class="style14">&nbsp;</p>
+              <p align="center" class="style14">&nbsp;</p>
+              <p align="center" class="style14">&nbsp;</p>
+              <p align="center" class="style14">&nbsp;</p>
+              <p align="center" class="style14">&nbsp;</p>
+              <p align="center" class="style14">&nbsp;</p>
+              <p align="center" class="style14">&nbsp;</p>
+              <p align="center" class="style14">&nbsp;</p>
+              <p align="left" class="style14">&nbsp;</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+               <script>
+function goBack()
+{
+  window.history.back();
+}
+</script>
+  </form>
+</body>
+</html>

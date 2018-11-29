@@ -45,60 +45,12 @@ and open the template in the editor.
 			background-color: green;
 		}
 		</style>
-		<script type="text/javascript">
-		function checkTel()
-		{
-			var tel = document.getElementById("tel").value;
-			if(tel > 9999999999 || tel < 1000000000 || isNaN(tel))
-			{
-				document.getElementById("output").innerHTML = "*Invalid Phone number.";
-				document.getElementById("output").style.visibility = 'visible';
-				document.getElementById('submit').style.visibility = 'hidden';
-			}
-			else
-			{
-				document.getElementById("output").innerHTML = "";
-				document.getElementById("output").style.visibility = 'hidden';
-				document.getElementById('submit').style.visibility = 'visible';
-			}
-		}
-		function checkId()
-		{
-			var sid = document.getElementById('sid').value;
-			if(sid > 1711981999|| sid < 1211981000 || isNaN(sid))
-			{
-				document.getElementById("output").innerHTML = "*Invalid  ID";
-				document.getElementById("output").style.visibility = 'visible';
-				document.getElementById('submit').style.visibility = 'hidden';
-			}
-			else
-			{
-				document.getElementById("output").innerHTML = "";
-				document.getElementById('submit').style.visibility = 'visible';
-			}
-		}
-		function checkPwd() {
-			var p1 = document.getElementById("pwd").value;
-			var p2 = document.getElementById("repwd").value;
-			var output = document.getElementById("output");
-			var submit = document.getElementById("submit");
-			if(p1 != p2)
-			{
-				output.innerHTML = "Passwords don't match";
-				output.style.visibility = "visible";
-				submit.style.visibility = "hidden";
-			}
-			else
-			{
-				output.style.visibility = "hidden";
-				submit.style.visibility = "visible";
-			}
-		}
-		</script>
+		
     </head>
     <body bgcolor = "white">
+      
         <div style = "background-color:white;padding: 0px 20px 20px 20px;">
-			<form id = "new-student-form" action = "CreateEvent.java" method="POST">
+			<form action = "createevent.jsp" method="post">
 				<fieldset>
 					<legend align="center">
 						<h1> Create a New Event </h1>
@@ -155,7 +107,7 @@ and open the template in the editor.
 								<h3>Contact No : </h3>
 							</td>
 							<td>
-								<input type="tel" placeholder="Contact No." id = "tel" name = "tel" onchange = "checkTel()" minlength=10 required>
+								<input type="text" placeholder="Contact No." id = "tel" name = "tel" >
 							</td>
 						</tr>
 					</table>

@@ -5,13 +5,15 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%
-    // HttpSession session = request.getSession();
-    session.invalidate();
-    %>
-    <script>
-	alert("Log out successful!");
+
+
+ <body background = "images\blur.jpg" style = "background-attachment: fixed;">
+session.invalidate();
+                 <script>
+	alert("Logged out successfully!");
 	location = 'index.html';
     </script>
-    <%
-%>
+
+
+</body>
+
